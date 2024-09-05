@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Travel Agency</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div>
+            <h1>Explore the World with Us</h1>
+            <p>Your adventure starts here.</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Discover More</a>
+        </div>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="container my-5">
+        <h2 class="text-center mb-4">Popular Destinations</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">Experience the romance and history of Paris, the City of Lights.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/345" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">New York</h5>
+                        <p class="card-text">Explore the bustling streets and iconic landmarks of New York City.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://picsum.photos/200/764" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo</h5>
+                        <p class="card-text">Discover the vibrant culture and advanced technology of Tokyo.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="container my-5">
+        <h2 class="text-center mb-4">Our Tours</h2>
+        <div class="accordion" id="toursAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            European Tour
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Discover the beauty of Europe with our comprehensive European tour package.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Asian Adventure
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Experience the rich cultures and breathtaking landscapes of Asia with our exclusive tour.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            American Highlights
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Explore the major landmarks and vibrant cities of the Americas on this amazing tour.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination of Interest</label>
+                <input type="text" class="form-control" id="destination" placeholder="Destination">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html
